@@ -1,6 +1,6 @@
 /* Font */
-@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
 * {
   margin: 0;
@@ -13,9 +13,9 @@ html {
 }
 
 body {
-  font-family: "Odibee", "Oswald", sans-serif;
+  font-family: "Oswald", "Roboto Condensed", sans-serif;
   overflow-x: hidden;
-  background-color: skyblue;
+  background-color: #b9b9b9;
 }
 
 header {
@@ -28,7 +28,7 @@ nav {
   display: flex;
   top: 0;
   position: sticky;
-  background-color: black;
+  background-color: #20232c;
   justify-content: space-around;
   height: 70px;
   align-items: center;
@@ -112,8 +112,12 @@ ul.menu li a.active {
   opacity: 0;
 }
 
+section {
+  padding-top: 2.5rem;
+}
+
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)) rgba(0, 0, 0, 0.5);
   filter: blur(1.5px);
   -webkit-filter: blur(1.5px);
   width: 100%;
@@ -162,6 +166,7 @@ main {
 /* tentang */
 h1 {
   margin-top: 30px;
+  text-transform: uppercase;
 }
 
 hr {
@@ -271,20 +276,29 @@ textarea {
   background-color: rgb(255, 179, 38);
 }
 
-label {
+.container label {
   float: left;
 }
 
 footer {
   padding: 30px;
   color: white;
-  background-color: black;
+  background-color: #20232c;
   text-align: center;
 }
 
 /* responsive web */
-/* tablet 1000px */
-@media screen and (max-width: 1000px) {
+/* ukuran tablet */
+@media screen and (max-width: 1050px) {
+  nav ul {
+    width: 65%;
+  }
+  .hero-image,
+  .hero-text {
+    width: 100%;
+    height: auto;
+    bottom: 7.5px;
+  }
   .videowrapper {
     float: none;
     clear: both;
@@ -309,37 +323,20 @@ footer {
   }
 }
 
-/* ukuran tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 740px) {
   nav ul {
-    width: 50%;
+    width: 75%;
   }
-  .videowrapper {
-    float: none;
-    clear: both;
+  .hero-image,
+  .hero-text {
     width: 100%;
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
-    right: 40px;
-  }
-  .videowrapper iframe,
-  .videowrapper object,
-  .videowrapper embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .article {
-    margin: 15px;
+    height: auto;
+    bottom: 7.5px;
   }
 }
 
 /* ukuran mobile */
-@media screen and (max-width: 657px) {
+@media screen and (max-width: 530px) {
   .menu-toggle {
     display: flex;
   }
