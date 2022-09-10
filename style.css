@@ -155,7 +155,7 @@ nav ul li a:hover {
 
 main {
   padding: 20px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #content {
@@ -326,6 +326,7 @@ footer {
 
 /* responsive web */
 /* ukuran tablet */
+/* 1115px */
 @media screen and (max-width: 1115px) {
   nav ul {
     width: 65%;
@@ -380,6 +381,9 @@ footer {
 @media screen and (max-width: 530px) {
   .menu-toggle {
     display: flex;
+  }
+  nav {
+    position: sticky;
   }
   nav ul {
     position: absolute;
