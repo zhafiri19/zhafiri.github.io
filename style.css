@@ -390,7 +390,7 @@ footer {
     justify-content: space-evenly;
     flex-direction: column;
     background-color: black;
-    width: 50%;
+    width: 100%;
     z-index: -1;
     transform: translateX(100%);
     transition: all 1s;
