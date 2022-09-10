@@ -26,8 +26,8 @@ header {
 
 nav {
   display: flex;
-  top: 0;
   position: sticky;
+  top: 0;
   background-color: #20232c;
   justify-content: space-around;
   height: 70px;
@@ -54,7 +54,7 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-ul.menu li a.active {
+.active a {
   color: rgb(255, 179, 38);
 }
 
@@ -112,7 +112,9 @@ ul.menu li a.active {
   opacity: 0;
 }
 
-section {
+#tentang,
+#portofolio,
+#kontak {
   padding-top: 2.5rem;
 }
 
@@ -233,6 +235,41 @@ img {
   width: 100%;
 }
 
+.btn-repo {
+  background-color: teal;
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 120px;
+  font-weight: 300;
+  display: inline-flex;
+  margin: 4px 2px;
+  text-decoration: none;
+}
+
+.btn-repo:hover {
+  background-color: rgb(28, 95, 95);
+}
+
+.btn-demo {
+  background-color: #00a5ff;
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 120px;
+  font-weight: 300;
+  display: inline-flex;
+  margin: 4px 2px;
+  text-decoration: none;
+  margin: 0;
+}
+
+.btn-demo:hover {
+  background-color: #1d85ff;
+}
+
 .box {
   padding: 10px;
   text-align: left;
@@ -289,7 +326,7 @@ footer {
 
 /* responsive web */
 /* ukuran tablet */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1115px) {
   nav ul {
     width: 65%;
   }
@@ -320,6 +357,10 @@ footer {
   }
   .article {
     margin: 15px;
+  }
+  .btn-repo,
+  .btn-demo {
+    display: block;
   }
 }
 
@@ -394,9 +435,13 @@ footer {
   .gambarwrapper {
     display: contents;
   }
+  .btn-repo,
+  .btn-demo {
+    display: block;
+  }
   .container,
   .container button {
-    display: flex;
+    display: flow-root;
     margin-bottom: 7.5px;
   }
 }
