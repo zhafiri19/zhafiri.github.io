@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 
 body {
@@ -326,8 +327,7 @@ footer {
 
 /* responsive web */
 /* ukuran tablet */
-/* 1115px */
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1334px) {
   nav ul {
     width: 65%;
   }
@@ -362,18 +362,6 @@ footer {
   .btn-repo,
   .btn-demo {
     display: block;
-  }
-}
-
-@media screen and (max-width: 740px) {
-  nav ul {
-    width: 75%;
-  }
-  .hero-image,
-  .hero-text {
-    width: 100%;
-    height: auto;
-    bottom: 7.5px;
   }
 }
 
