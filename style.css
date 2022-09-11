@@ -114,6 +114,7 @@ nav ul li a:hover {
 }
 
 #tentang,
+#keahlian,
 #portofolio,
 #kontak {
   padding-top: 2.5rem;
@@ -222,6 +223,87 @@ hr {
 
 .sosial-media i:hover {
   color: rgb(255, 179, 38);
+}
+
+/* skills */
+.skills {
+  width: 700px;
+  margin: 30px auto;
+  color: #fff;
+  padding: 20px;
+  background-color: black;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skills__data {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.skills__icon__html {
+  position: absolute;
+  font-size: 40px;
+  color: rgb(224, 74, 19);
+}
+
+.skills__icon__css {
+  position: absolute;
+  font-size: 40px;
+  color: rgb(11, 148, 228);
+}
+
+.skills__icon__js {
+  position: absolute;
+  font-size: 40px;
+  color: rgb(236, 236, 14);
+}
+.skills__icon__unity {
+  position: absolute;
+  font-size: 40px;
+  color: rgb(129, 124, 124);
+}
+
+.skills__img {
+  position: absolute;
+  width: 45px;
+  margin-top: 15px;
+}
+
+.skills__name {
+  font-size: 15px;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+
+.skills__bar {
+  position: absolute;
+  margin-left: 50px;
+  bottom: -0.75rem;
+  height: 0.25rem;
+  width: 0;
+  transition: all 1.8s;
+}
+
+.skills__html {
+  background-color: rgb(224, 74, 19);
+}
+
+.skills__css {
+  background-color: rgb(11, 148, 228);
+}
+
+.skills__js {
+  background-color: rgb(236, 236, 14);
+}
+
+.skills__c-sharp {
+  background-color: rgb(170, 24, 170);
+}
+
+.skills__unity {
+  background-color: rgb(129, 124, 124);
 }
 
 /* Portofolio */
@@ -362,6 +444,10 @@ footer {
   .btn-repo,
   .btn-demo {
     display: block;
+  }
+  .skills {
+    width: auto;
+    height: auto;
   }
 }
 
