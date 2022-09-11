@@ -378,12 +378,9 @@ footer {
 }
 
 /* ukuran mobile */
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 576px) {
   .menu-toggle {
     display: flex;
-  }
-  nav {
-    position: sticky;
   }
   nav ul {
     position: absolute;
@@ -394,7 +391,7 @@ footer {
     justify-content: space-evenly;
     flex-direction: column;
     background-color: black;
-    width: 100%;
+    width: 65%;
     z-index: -1;
     transform: translateX(100%);
     transition: all 1s;
