@@ -90,11 +90,11 @@ nav ul li a:hover {
 
 /* menu hamburger animation */
 .menu-toggle span:nth-child(2) {
-  transform-origin: 0 0;
+  transform-origin: top left;
 }
 
 .menu-toggle span:nth-child(4) {
-  transform-origin: 0 100%;
+  transform-origin: bottom left;
   background-color: white;
 }
 
@@ -121,10 +121,8 @@ nav ul li a:hover {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)) rgba(0, 0, 0, 0.5);
   filter: blur(1.5px);
   -webkit-filter: blur(1.5px);
-  width: 100%;
   height: 1000px;
 }
 
@@ -144,7 +142,6 @@ nav ul li a:hover {
   outline: 0;
   display: inline-block;
   padding: 10px 25px;
-  color: black;
   background-color: #ddd;
   text-align: center;
   cursor: pointer;
@@ -152,7 +149,6 @@ nav ul li a:hover {
 
 .hero-text button:hover {
   background-color: rgb(255, 179, 38);
-  color: black;
 }
 
 main {
@@ -407,9 +403,35 @@ footer {
   text-align: center;
 }
 
-/* responsive web */
-/* ukuran tablet */
+/* breakpoints device */
 @media screen and (max-width: 1334px) {
+  nav ul {
+    width: 50%;
+  }
+  .videowrapper {
+    float: left;
+    margin: 30px;
+  }
+  .article {
+    margin: 35px;
+    font-size: 20px;
+  }
+  .gambar2 {
+    width: 23%;
+    border-radius: 50%;
+    margin-inline: 230px;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid black;
+  }
+  .btn-repo,
+  .btn-demo {
+    display: block;
+  }
+}
+
+/* ukuran tablet device */
+@media screen and (max-width: 881px) {
   nav ul {
     width: 65%;
   }
@@ -458,7 +480,7 @@ footer {
   }
   nav ul {
     position: absolute;
-    right: 0;
+    right: -100%;
     top: 0;
     height: 100vh;
     align-items: center;
@@ -467,13 +489,12 @@ footer {
     background-color: black;
     width: 65%;
     z-index: -1;
-    transform: translateX(100%);
     transition: all 1s;
     opacity: 0;
   }
   nav ul.slide {
     opacity: 1;
-    transform: translateX(0);
+    right: 0;
   }
   .hero-image,
   .hero-text {
